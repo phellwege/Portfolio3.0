@@ -1,0 +1,30 @@
+#headspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+#Logo {
+    height: 125px;
+    border-radius: .25em;
+    margin-top: 5%;
+}
+.devWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+@media only screen and (max-width: 720px) {
+    #Logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #headspace {
+        flex-direction: column;
+        margin-top: 20%;
+        margin-right: 0%;
+    }
+}

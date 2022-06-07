@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+#navigation {
+    padding: 10px 0px 10px 0px;
+    margin-bottom:1.5% ;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+#navigation li a {
+    color: #000;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif; 
+}
+#navigation li a.active {
+    background-color: #44566b;
+    color: white;
+}
+.resume_button {
+    border-radius: 1em;
+    padding: 5px 15px;
+    background-color: #EAF2F8;
+}
+#NavBarFull {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    font-size: 85%;
+    overflow: auto;
+    opacity: 95%;
+    z-index: 1;
+    top: 0;
+}
+@Media only screen and (min-width:721px){
+    #Hamburger_Menu {
+    display: none;
+}
+}
+@media only screen and (max-width: 720px) {
+    #navigation {
+        display: none;
+    }
+    #Hamburger_Menu {
+        display: block;
+        justify-content: flex-start;
+        padding: 2%;
+    }
+    #NavBarFull {
+        flex-direction: row;
+    }
+    .navBar {
+        position: relative;
+    }
+    .navBar button {
+        position: fixed;
+        left: 40px;
+        top: 40px;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .menuNav {
+        overflow-y: scroll;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        background: #4f6173;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        max-width: 290px;
+        z-index: 9;
+        transition: .75s;
+    }
+    .menuNav.showMenu {
+        width: 100%;
+    }
+    a {
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        color: #52f97e;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .menuNav li:first-child {
+        margin-top: 7rem;
+    }
+    .navBar button {
+        background: transparent;;
+        border: none;
+    }
+}
