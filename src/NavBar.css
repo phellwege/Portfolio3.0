@@ -8,6 +8,7 @@
     flex-direction: row;
     list-style-type: none;
     justify-content: space-evenly;
+    align-items: center;
 }
 #navigation li a {
     color: #000;
