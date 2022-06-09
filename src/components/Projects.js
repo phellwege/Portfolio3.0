@@ -109,7 +109,7 @@ const Projects = () => {
                     <h4>Description</h4>
                     <p>Star Wars HomeComing is a text based interactive game. Where you can create your own custom character, and travel the known galaxy. It's a lightweight Python application, that is easy to use with a nice UI.</p>
                         <div className="ProjDesc">
-                        <Link to="/StarWarsDetails#top">Details</Link>
+                        <Link to="/StarWarsDetails">Details</Link>
                         <a href="http://ec2-3-14-141-156.us-east-2.compute.amazonaws.com/" target="_blank" rel="noreferrer">Deployed Site</a>
                         <a href="https://github.com/bdsullivan123/homecoming" target="_blank" rel="noreferrer">
                             Github Repo
