@@ -68,23 +68,6 @@ const Projects = () => {
                             </div>
                 </div>
                 <div className="project">
-                    <h3>Tip Calculator</h3>
-                    <br/>
-                    <img src={TipMe} alt="Tip Calculator App"/>
-                    <h4>Description</h4>
-                    <p>
-                        Tip Calculator is a front end mini project to keep my HTML, CSS, and JavaScript skills sharp. I followed a basic wireframe from frontendmentor, which I've found to be very helpful.
-                    </p>
-                        <div className="ProjDesc">
-                            <a href="https://phellwege.github.io/Tip_Calculator/" target="_blank" rel="noreferrer">Deployed Site</a>
-                            <a href="https://github.com/phellwege/Tip_Calculator" target="_blank" rel="noreferrer">
-                                Github Repo
-                                <br/>
-                                <img id="github" src={github} alt="logo"/>
-                                </a>
-                        </div>
-                </div>
-                <div className="project">
                     <h3>Party Time</h3>
                     <br/>
                     <img src={img1} alt=""/>
@@ -112,7 +95,7 @@ const Projects = () => {
                             Countdown timer was quick challenge in order to build a really good looking countdown component.
                         </p>
                             <div className="ProjDesc">
-                                <a href="https://phellwege.github.io/countdown/">Deployed Site</a>
+                                <a href="https://phellwege.github.io/countdown/" target="_blank" rel="noreferrer">Deployed Site</a>
                                 <a href="https://github.com/phellwege/countdown" target="_blank" rel="noreferrer">
                                     Github Repo
                                     <br/>
@@ -135,6 +118,23 @@ const Projects = () => {
                             <br/>
                             <img id="github" src={github} alt="logo"/> 
                         </a>
+                        </div>
+                </div>
+                <div className="project">
+                    <h3>Tip Calculator</h3>
+                    <br/>
+                    <img src={TipMe} alt="Tip Calculator App"/>
+                    <h4>Description</h4>
+                    <p>
+                        Tip Calculator is a front end mini project to keep my HTML, CSS, and JavaScript skills sharp. I followed a basic wireframe from frontendmentor, which I've found to be very helpful.
+                    </p>
+                        <div className="ProjDesc">
+                            <a href="https://phellwege.github.io/Tip_Calculator/" target="_blank" rel="noreferrer">Deployed Site</a>
+                            <a href="https://github.com/phellwege/Tip_Calculator" target="_blank" rel="noreferrer">
+                                Github Repo
+                                <br/>
+                                <img id="github" src={github} alt="logo"/>
+                                </a>
                         </div>
                 </div>
             </div>
