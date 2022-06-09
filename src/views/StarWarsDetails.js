@@ -30,7 +30,7 @@ export default () => {
             <Head/>
             <NavBarDetails/>
             <div className="page_wrap">
-                <h2>About Star Wars Homecoming</h2>
+                <h2 id='top'>About Star Wars Homecoming</h2>
             </div>
             <div id="row">
                 <div id="row_words">

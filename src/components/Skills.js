@@ -16,7 +16,7 @@ import Css from '../static/CSS.png';
 const Skills = () => {
     return (
         <>
-            <div class="page_wrap">
+            <div className="page_wrap" id='Skills'>
                 <h2>Skills:</h2>
                 <div className="skills">
                     <img src={JavaScript} alt="Javascript" id="JavaScript"/>

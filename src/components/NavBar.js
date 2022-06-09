@@ -5,7 +5,7 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import Toggle from '../Toggle/DayNight_Mode';
-import {Link} from 'react-router-dom';
+import {HashLink as Link } from 'react-router-hash-link';
 
 // the first set is dark mode the second is light mode
 // dark contrast color b1b1b3
@@ -20,14 +20,10 @@ const GlobalStyle = createGlobalStyle`
             props.theme.mode === 'dark' ? 'all 0.3s ease-in-out': 'all 0.5s ease-in-out'};
     }
     h1 {
-        text-shadow: ${props =>
-            props.theme.mode === 'dark' ? '0 0 5px whitesmoke' : 'none'};
         color: ${props => 
             props.theme.mode === 'dark' ? 'whitesmoke' : '#111' };
     };
     h2 {
-        text-shadow: ${props =>
-            props.theme.mode === 'dark' ? '0 0 5px whitesmoke' : 'none'};
         color: ${props => 
             props.theme.mode === 'dark' ? 'whitesmoke' : '#111' };
     }
@@ -191,10 +187,10 @@ const NavBar = (props) => {
                     )}
                     </button>
                         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-                            <li><a className="active" href="#Home" onClick={() => closeMenu()}>Home</a></li>
-                            <li><a href="#Skills" onClick={() => closeMenu()}>Skills</a></li>
-                            <li><a href="#Projects" onClick={() => closeMenu()}>Projects</a></li>
-                            <li><a href="#Contact" onClick={() => closeMenu()}>Contact</a></li>
+                            <li><Link className="active" to="#Home" onClick={() => closeMenu()}>Home</Link></li>
+                            <li><Link to="#Skills" onClick={() => closeMenu()}>Skills</Link></li>
+                            <li><Link to="#Projects" onClick={() => closeMenu()}>Projects</Link></li>
+                            <li><Link to="#Contact" onClick={() => closeMenu()}>Contact</Link></li>
                             <li><a href={resume} download="../static/Peter.Hellwege.Resume.pdf" onClick={() => closeMenu()}>Download Resume</a></li>
                             <div className="Mode">
                             <Toggle toggled={toggled} onClick={() => {handleClick(); closeMenu();}} />

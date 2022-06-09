@@ -1,8 +1,9 @@
 import "../NavBar.css";
 import React, { useState } from "react"
 import resume from '../static/Peter.Hellwege.Resume.pdf';
-import { MdClose } from "react-icons/md"
-import { FiMenu } from "react-icons/fi"
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
+import {HashLink as Link } from 'react-router-hash-link';
 
 const NavBarDetails = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -18,9 +19,9 @@ const NavBarDetails = () => {
         <div id="NavBarFull">
             <ul id="navigation">
                 <li><a className="active" href="/">Home</a></li>
-                <li><a href="#tech_desc">Technical Overview</a></li>
-                <li><a href="/#Projects">More Projects</a></li>
-                <li><a href="/#Contact">Contact</a></li>
+                <li><Link to="/StarWarsDetails#tech_desc">Technical Overview</Link></li>
+                <li><Link to ="/#Projects">More Projects</Link></li>
+                <li><Link to ="/#Contact">Contact</Link></li>
             </ul>
         <div id="Hamburger_Menu">
             <nav className="navBar">
@@ -32,9 +33,9 @@ const NavBarDetails = () => {
                 </button>
                     <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
                         <li><a className="active" href="/" onClick={() => closeMenu()}>Home</a></li>
-                        <li><a href="#tech_desc" onClick={() => closeMenu()}>Technical Overview</a></li>
-                        <li><a href="/#Projects" onClick={() => closeMenu()}>More Projects</a></li>
-                        <li><a href="/#Contact" onClick={() => closeMenu()}>Contact</a></li>
+                        <li><Link to="#tech_desc" onClick={() => closeMenu()}>Technical Overview</Link></li>
+                        <li><Link to="/#Projects" onClick={() => closeMenu()}>More Projects</Link></li>
+                        <li><Link to="/#Contact" onClick={() => closeMenu()}>Contact</Link></li>
                         <li><a href={resume} download="../static/Peter.Hellwege.Resume.pdf" onClick={() => closeMenu()}>Download Resume</a></li>
                     </ul>
                 </nav>

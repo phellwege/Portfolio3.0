@@ -13,8 +13,8 @@ const Head = () => {
 
     return (
         <div id='headspace'>
-            <div>
-                <h1><Link to="/"><img src={Logo} alt="custom logo" id="Logo"/></Link></h1>
+            <div id='top'>
+                <Link to="/"><img src={Logo} alt="custom logo" id="Logo"/></Link>
             </div>
             <div className='devWrap'>
                 <h1>Peter Hellwege</h1>
