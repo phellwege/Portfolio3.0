@@ -1,4 +1,4 @@
-import { Link } from '@reach/router';
+
 import '../Main.css';
 
 const Tail = () => {

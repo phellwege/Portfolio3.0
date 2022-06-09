@@ -17,7 +17,7 @@ const NavBarDetails = () => {
         <>
         <div id="NavBarFull">
             <ul id="navigation">
-                <li><a class="active" href="/">Home</a></li>
+                <li><a className="active" href="/">Home</a></li>
                 <li><a href="#tech_desc">Technical Overview</a></li>
                 <li><a href="/#Projects">More Projects</a></li>
                 <li><a href="/#Contact">Contact</a></li>
@@ -31,7 +31,7 @@ const NavBarDetails = () => {
                 )}
                 </button>
                     <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-                        <li><a class="active" href="/" onClick={() => closeMenu()}>Home</a></li>
+                        <li><a className="active" href="/" onClick={() => closeMenu()}>Home</a></li>
                         <li><a href="#tech_desc" onClick={() => closeMenu()}>Technical Overview</a></li>
                         <li><a href="/#Projects" onClick={() => closeMenu()}>More Projects</a></li>
                         <li><a href="/#Contact" onClick={() => closeMenu()}>Contact</a></li>

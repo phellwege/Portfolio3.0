@@ -1,4 +1,3 @@
-import { Link } from '@reach/router';
 import "../Main.css"
 import JavaScript from '../static/JavaScript.png';
 import Java from '../static/java.png';
@@ -19,26 +18,24 @@ const Skills = () => {
         <>
             <div class="page_wrap">
                 <h2>Skills:</h2>
-                <div class="skills">
+                <div className="skills">
                     <img src={JavaScript} alt="Javascript" id="JavaScript"/>
                     <img src={Java} alt="Java"/>
                     <img src={Html} alt="HTML" id="HTML"/>
                     <img src={Css} alt="CSS" id="Css"/>
                     <img src={Python} alt="Python" id="Python"/>
                 </div>
-                <div class="skills">
+                <div className="skills">
                     <img src={jQuery} alt="jQuery" id="jQuery"/>
                     <img src={Ajax} alt="Ajax" id="Ajax"/>
                     <img src={Bootstrap} alt="Bootstrap" id="Bootstrap"/>
                 </div>
-                <div class="skills">
+                <div className="skills">
                     <img src={Node} alt="Nodejs" id="Node"/>
                     <img src={Django} alt="Django" id="Django"/>
                     <img src={Express} alt="Express" id="Express"/>
                     <img src={MongoDB} alt="Mongo" id="Mongo"/>
                     <img src={MySQL} alt="MySQL" id="MySQL"/>
-                </div>
-                <div class="skills">
                 </div>
             </div>
         </>

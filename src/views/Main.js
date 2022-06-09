@@ -15,9 +15,9 @@ export default () => {
         <div id="background">
             <div id="Home"><Head/></div>
             <NavBar/>        
-                <div id="Skills"><Skills/></div>
+                <Skills id="Skills"/>
                 <About/>
-                <div id="Projects"><Projects/></div>
+                <Projects id="Projects"/>
                 <Contact/>
             <Tail/>
         </div>

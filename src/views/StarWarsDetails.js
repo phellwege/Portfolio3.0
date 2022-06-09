@@ -19,9 +19,9 @@ import jQuery from '../static/jQuery.png';
 
 const handleDragStart = (e) => e.preventDefault();
 const items = [
-    <img src={img1} onDragStart={handleDragStart} id="gifStuff"/>,
-    <img src={img4} onDragStart={handleDragStart} id="gifStuff"/>,
-    <img src={img5} onDragStart={handleDragStart} id="gifStuff"/>,
+    <img src={img1} onDragStart={handleDragStart} id="gifStuff" alt='img thumnail'/>,
+    <img src={img4} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail'/>,
+    <img src={img5} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail'/>,
 ];
 
 export default () => {
@@ -29,7 +29,7 @@ export default () => {
         <>
             <Head/>
             <NavBarDetails/>
-            <div class="page_wrap">
+            <div className="page_wrap">
                 <h2>About Star Wars Homecoming</h2>
             </div>
             <div id="row">
@@ -47,13 +47,13 @@ export default () => {
                     <AliceCarousel mouseTracking items={items} autoPlay={true} autoPlayInterval={6500} infinite={true}/>
                 </div>
             </div>
-            <div class="page_wrap">
+            <div className="page_wrap">
                 <h3>Technical Description</h3>
                 <p id="tech_desc">
                 Collaborated on a team of three and coordinated planning, creating wireframes, and group discussions in order to increase overall productivity on the project. Designed a responsive, clean front-end interface using a combination of CSS, SQLite and JQuery to create a more seamless and comprehensive environment. Implemented a robust SQLite database using Django in order to improve future maintenance, and elevate user experience. Utilized Bcrypt, and multiple validations to protect our data. Tested the code using W3 Code Validator to ensure it functioned at its maximum potential.                
                 </p>
                 <h3>Technology Used</h3>
-                <div class="skills">
+                <div className="skills">
                     <br/>
                 <img src={Python} alt="Python" id="Python"/>
                 <img src={Html} alt="HTML" id="HTML"/>

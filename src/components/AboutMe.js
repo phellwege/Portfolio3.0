@@ -1,11 +1,10 @@
-import { Link } from '@reach/router';
 import "../Main.css"
 import HeadShot from '../static/HeadShot.jpeg';
 
 const AboutMe = () => {
     return (
         <>
-        <div id="About" class="page_wrap">
+        <div id="About" className="page_wrap">
             <h2>About</h2>
             {/* There should be a more professional headshot here */}
             <img src={HeadShot} alt="Selfie Pic" id="HeadShotPic"/>
@@ -23,7 +22,6 @@ const AboutMe = () => {
             </p>
             <br/>
                 <h3>Where am I located?</h3>
-
                 <p> Scenic <span id="boldMe">Boise, Idaho</span> I would also be more than happy to work remotely, or for the right position even consider a move. 
                 </p>
             <br />

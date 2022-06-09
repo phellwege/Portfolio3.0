@@ -23,10 +23,10 @@ import img4 from '../static/giphyMovie.gif';
 
 const handleDragStart = (e) => e.preventDefault();
 const items = [
-    <img src={img1} onDragStart={handleDragStart} id="gifStuff"/>,
-    <img src={img2} onDragStart={handleDragStart} id="gifStuff"/>,
-    <img src={img3} onDragStart={handleDragStart} id="gifStuff"/>,
-    <img src={img4} onDragStart={handleDragStart} id="gifStuff"/>,
+    <img src={img1} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail'/>,
+    <img src={img2} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail' />,
+    <img src={img3} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail'/>,
+    <img src={img4} onDragStart={handleDragStart} id="gifStuff" alt='img thumbnail'/>,
 ];
 
 export default () => {
@@ -34,7 +34,7 @@ export default () => {
         <>
             <Head/>
             <NavBarDetails/>
-            <div class="page_wrap">
+            <div className="page_wrap">
                 <h2>About PartyTime</h2>
             </div>
             <div id="row">
@@ -44,7 +44,7 @@ export default () => {
                         Party Time is a work in progress. It's a comprehensive, immersive game, that focusses around activities that are available during either the day or night. the activities become unavailable during either of the opposite timeframes.
                         <br/>
                         <br/>
-                        All of the animations were created on <a href="https://www.piskelapp.com/" target="_blank">Piskel</a> from scratch. I encoded the different actions in Javascript. and the day/night toggle effect is comprehensive. 
+                        All of the animations were created on <a href="https://www.piskelapp.com/" target="_blank" rel="noreferrer">Piskel</a> from scratch. I encoded the different actions in Javascript. and the day/night toggle effect is comprehensive. 
                     </p>
                 </div>
                 <div id="carousel">
@@ -55,7 +55,7 @@ export default () => {
                     <AliceCarousel mouseTracking items={items} autoPlay={true} autoPlayInterval={8000} infinite={true}/>
                 </div>
             </div>
-            <div class="page_wrap">
+            <div className="page_wrap">
                 <h3>Technical Description</h3>
                 <p id="tech_desc">
                     I started with a basic written proposal of what I wanted to accomplish. Then I wireframed the entire project, adding ToDo items as I went. I hadn't ever made a day/night toggle so that was the first problem to tackle.
@@ -87,7 +87,7 @@ export default () => {
                     </div>
                 </div>
                 <h3>Technology Used</h3>
-                <div class="skills">
+                <div className="skills">
                     <br/>
                 <img src={JavaScript} alt="Javascript" id="JavaScript"/>
                 <img src={Html} alt="HTML" id="HTML"/>

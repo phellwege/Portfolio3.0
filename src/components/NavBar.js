@@ -5,6 +5,7 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import Toggle from '../Toggle/DayNight_Mode';
+import {Link} from 'react-router-dom';
 
 // the first set is dark mode the second is light mode
 // dark contrast color b1b1b3
@@ -149,15 +150,14 @@ const GlobalStyle = createGlobalStyle`
     };
 `
 
-const NavBar = () => {
-
+const NavBar = (props) => {
+    const {active}=props;
     const [toggled, setToggled] = useState(false);
     const [theme, setTheme] = useState({mode: 'light'})
     const handleClick =() => {
         setToggled((s)=>!s);
         setTheme(theme.mode === 'dark' ? {mode: 'light'}: {mode:'dark'});
 }
-
     const [navbarOpen, setNavbarOpen] = useState(false)
     const handleToggle = () => {
         setNavbarOpen(prev => !prev)
@@ -171,10 +171,10 @@ const NavBar = () => {
         <>
         <div id="NavBarFull">
             <ul id="navigation">
-                <li><a className="active" href="#Home">Home</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><Link to ='/#Home' className={(active===0?" active":"")}>Home</Link></li>
+                <li><Link to="/#Skills" className={(active===1?" active":"")}>Skills</Link></li>
+                <li><Link to="/#Projects" className={(active===2?" active":"")}>Projects</Link></li>
+                <li><Link to="/#Contact" className={(active===3?" active":"")}>Contact</Link></li>
                 <li><a href={resume} download="../static/Peter.Hellwege.Resume.pdf">Download Resume</a></li>
                     <div className="Mode">
                         <Toggle toggled={toggled} onClick={handleClick} />
@@ -196,10 +196,10 @@ const NavBar = () => {
                             <li><a href="#Projects" onClick={() => closeMenu()}>Projects</a></li>
                             <li><a href="#Contact" onClick={() => closeMenu()}>Contact</a></li>
                             <li><a href={resume} download="../static/Peter.Hellwege.Resume.pdf" onClick={() => closeMenu()}>Download Resume</a></li>
-                            <li><div className="Mode">
-                            <Toggle toggled={toggled} onClick={handleClick} />
+                            <div className="Mode">
+                            <Toggle toggled={toggled} onClick={() => {handleClick(); closeMenu();}} />
                             <p>{theme.mode === 'dark' ? "Dark" : "Light"}</p>
-                            </div></li>
+                            </div>
                         </ul>
                         
                 </nav>
