@@ -6,6 +6,7 @@ import SpaceTourism from '../static/CaptureSpaceTourism.PNG';
 import img1 from '../static/giphyHomePage.gif';
 import SW from '../static/giphySWHomePage.gif';
 import TipMe from '../static/giphyTipCalc.gif';
+import CountHome from '../static/CaptureCountDown.PNG'
 const Projects = () => {
     return (
         <>
@@ -95,6 +96,24 @@ const Projects = () => {
                             <div className="ProjDesc">
                                 <Link to="/PartyTimeDetails">Details</Link>
                                 <a href="https://github.com/phellwege/ThePartyTime" target="_blank" rel="noreferrer">
+                                    Github Repo
+                                    <br/>
+                                    <img id="github" src={github} alt="logo"/> 
+                                </a>
+                            </div>
+                </div>
+                <div className="project">
+                    <h3>Countdown Timer</h3>
+                    <br/>
+                    <img src={CountHome} alt=""/>
+                    <br/>
+                    <h4>Description</h4>
+                        <p>
+                            Countdown timer was quick challenge in order to build a really good looking countdown component.
+                        </p>
+                            <div className="ProjDesc">
+                                <a href="https://phellwege.github.io/countdown/">Deployed Site</a>
+                                <a href="https://github.com/phellwege/countdown" target="_blank" rel="noreferrer">
                                     Github Repo
                                     <br/>
                                     <img id="github" src={github} alt="logo"/> 
