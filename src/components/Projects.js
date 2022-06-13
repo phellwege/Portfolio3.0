@@ -74,10 +74,10 @@ const Projects = () => {
                     <br/>
                     <h4>Description</h4>
                         <p>
-                            Party Time is an ongoing Single Page Application (SPA) built from the ground up using ReactJS, CSS, and Javascript. It's a really fun and frustrating project to help me in my pursuit of constantly improving my code and knowledge of implementation.
+                            Party Time is an ongoing single page application built from the ground up using ReactJS, CSS, and Javascript. It's been a really fun and frustrating project to help me in my pursuit of constantly improving my code and knowledge of implementation.
                         </p>
                             <div className="ProjDesc">
-                                <Link to="/PartyTimeDetails">Details</Link>
+                                <a href="https://phellwege.github.io/ThePartyTime/" target="_blank" rel="noreferrer">Deployed Site</a>
                                 <a href="https://github.com/phellwege/ThePartyTime" target="_blank" rel="noreferrer">
                                     Github Repo
                                     <br/>
