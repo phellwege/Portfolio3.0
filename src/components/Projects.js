@@ -38,7 +38,7 @@ const Projects = () => {
                         <br/>
                     <h4>Description</h4>
                     <p>
-                        This is a Rock-Paper-Scissors game, that keeps track of your score through state management.
+                        Rock-Paper-Scissors is a simple game that keeps track of your score through state management. I designed the architecture to be as smooth as possible without the need for any page changes.
                     </p>
                     <div className="ProjDesc">
                         <a href="https://phellwege.github.io/RockPaperScissors/" target="_blank" rel="noreferrer">Deployed Site</a>
@@ -88,11 +88,13 @@ const Projects = () => {
                 <div className="project">
                     <h3>Countdown Timer</h3>
                     <br/>
-                    <img src={CountHome} alt=""/>
+                    <img src={CountHome} alt="" />
+                    <br/>
+                    <br/>
                     <br/>
                     <h4>Description</h4>
                         <p>
-                            Countdown timer was quick challenge in order to build a really good looking countdown component.
+                            Countdown timer was a quick challenge in order to build a really good looking countdown component, that can then be integrated into other projects.
                         </p>
                             <div className="ProjDesc">
                                 <a href="https://phellwege.github.io/countdown/" target="_blank" rel="noreferrer">Deployed Site</a>
@@ -126,7 +128,7 @@ const Projects = () => {
                     <img src={TipMe} alt="Tip Calculator App"/>
                     <h4>Description</h4>
                     <p>
-                        Tip Calculator is a front end mini project to keep my HTML, CSS, and JavaScript skills sharp. I followed a basic wireframe from frontendmentor, which I've found to be very helpful.
+                        Tip Calculator is a front end mini project to keep my HTML, CSS, and JavaScript skills sharp. I followed a basic wireframe from frontendmentor.
                     </p>
                         <div className="ProjDesc">
                             <a href="https://phellwege.github.io/Tip_Calculator/" target="_blank" rel="noreferrer">Deployed Site</a>
