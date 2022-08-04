@@ -37,11 +37,13 @@ const GlobalStyle = createGlobalStyle`
     };
     #navigation li a:hover:not(.active) {
         background-color: ${props =>
-            props.theme.mode === 'dark' ? '#56f981' : '#5499C7'};
+            props.theme.mode === 'dark' ? '#2a2a2e' : '#5499C7'};
         color: ${props =>
-            props.theme.mode === 'dark' ? 'rgb(255, 55, 55)' : 'white'};
+            props.theme.mode === 'dark' ? '#56f981' : 'white'};
         border: ${props =>
             props.theme.mode === 'dark' ? '1px solid darkgreen' : '1px solid black'};
+        box-shadow: ${props =>
+            props.theme.mode === 'dark' ? '0 0 5px #56f981' : 'none'};
     };
     #Logo {
         box-shadow: ${props =>
