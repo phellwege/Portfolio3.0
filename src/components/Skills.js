@@ -13,6 +13,9 @@ import MongoDB from '../static/mongodb.png';
 import Html from '../static/HTML.png';
 import Css from '../static/CSS.png';
 
+import DataBricks from '../static/ajax.png';
+import DataFactory from '../static/ajax.png';
+
 const Skills = () => {
     return (
         <>
@@ -27,8 +30,10 @@ const Skills = () => {
                 </div>
                 <div className="skills">
                     <img src={jQuery} alt="jQuery" id="jQuery"/>
-                    <img src={Ajax} alt="Ajax" id="Ajax"/>
                     <img src={Bootstrap} alt="Bootstrap" id="Bootstrap"/>
+                    {/* <img src={DataBricks} alt='DataBricks' id="DataBricks"/> */}
+                    <img src={Ajax} alt="Ajax" id="Ajax"/>
+                    {/* <img src={DataFactory} alt='DataFactory' id='DataFactory'/> */}
                 </div>
                 <div className="skills">
                     <img src={Node} alt="Nodejs" id="Node"/>
